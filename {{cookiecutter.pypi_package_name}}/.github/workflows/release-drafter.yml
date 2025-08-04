@@ -29,10 +29,10 @@ jobs:
         with:
           config-name: config/release-drafter.yml
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
       - name: Add step summary
         run: |
-          echo "# [Draft a release](${{ steps.release-drafter.outputs.html_url }}) ✍️" >> $GITHUB_STEP_SUMMARY
+          echo "# [Draft a release]({% raw %}${{ steps.release-drafter.outputs.html_url }}{% endraw %}) ✍️" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "## ${{ steps.release-drafter.outputs.name }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.release-drafter.outputs.body }}" >> $GITHUB_STEP_SUMMARY
+          echo "## {% raw %}${{ steps.release-drafter.outputs.name }}{% endraw %}" >> $GITHUB_STEP_SUMMARY
+          echo "{% raw %}${{ steps.release-drafter.outputs.body }}{% endraw %}" >> $GITHUB_STEP_SUMMARY
