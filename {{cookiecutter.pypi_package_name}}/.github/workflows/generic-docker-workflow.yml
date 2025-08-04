@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME_SHORT: {{ cookiecutter.project_category }}/{{ cookiecutter.project_slug }}
+  IMAGE_NAME_SHORT: {{ cookiecutter.project_category }}/{{ cookiecutter.pypi_package_name }}
 
 jobs:
   run-pytest:
