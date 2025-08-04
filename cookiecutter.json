@@ -5,20 +5,13 @@
   "github_organization": "gorilla-ai",
   "pypi_package_name": "python-boilerplate",
   "project_name": "Python Boilerplate",
-  "project_category": {
-    "choices": [
-      "oneamazon",
-      "moe",
-      "cyber",
-      "devops", 
-      "team",
-      "scap",
-      "sq",
-      "vai",
-      "net"
-    ],
-    "default": "oneamazon"
-  },
+  "project_category": [
+    "iot-dss",
+    "cyber-scp",
+    "cyber-netstream",
+    "cyber-deepnet", 
+    "vai-ivar"
+  ],
   "project_slug": "{{ cookiecutter.pypi_package_name.replace('-', '_') }}",
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "pypi_username": "{{ cookiecutter.github_username }}",
