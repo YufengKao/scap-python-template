@@ -4,9 +4,10 @@ version = "0.2.0"
 description = "Cookiecutter template for a Python package"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = { text = "Proprietary" }
 authors = [
-    { name = "Audrey M. Roy Greenfeld", email = "audrey@feldroy.com" }
+    { name = "Audrey M. Roy Greenfeld", email = "audrey@feldroy.com" },
+    { name = "Gorilla Inc.", email = "contact@gorilla-technology.com" }
 ]
 keywords = ["cookiecutter", "template", "package"]
 classifiers = [
@@ -14,7 +15,7 @@ classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Natural Language :: English",
-    "License :: OSI Approved :: MIT License",
+    "License :: Other/Proprietary License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",

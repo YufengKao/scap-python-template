@@ -5,8 +5,12 @@
 
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a Python package.
 
+> **注意**：此版本基於 [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) (MIT許可證) 修改而來。
+> 原始版權：Audrey M. Roy Greenfeld
+> 修改版權：Gorilla Inc.
+
 *   GitHub repo: [https://github.com/audreyfeldroy/cookiecutter-pypackage/](https://github.com/audreyfeldroy/cookiecutter-pypackage/)
-*   Free software: MIT license
+*   Proprietary software: Gorilla Inc. license
 *   Discord: [https://discord.gg/PWXJr3upUE](https://discord.gg/PWXJr3upUE)
 
 ## Features

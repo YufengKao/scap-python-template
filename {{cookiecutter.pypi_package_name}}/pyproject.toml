@@ -12,7 +12,7 @@ maintainers = [
 classifiers = [
 
 ]
-license = {text = "MIT"}
+license = {text = "Proprietary"}
 dependencies = [
   "typer"
 ]
@@ -28,9 +28,9 @@ test = [
 ]
 
 [project.urls]
-bugs = "https://github.com/{{cookiecutter.__gh_slug}}/issues"
-changelog = "https://github.com/{{cookiecutter.__gh_slug}}/blob/master/changelog.md"
-homepage = "https://github.com/{{cookiecutter.__gh_slug}}"
+bugs = "https://github.com/{{cookiecutter.github_organization}}/{{cookiecutter.__gh_slug}}/issues"
+changelog = "https://github.com/{{cookiecutter.github_organization}}/{{cookiecutter.__gh_slug}}/blob/master/changelog.md"
+homepage = "https://github.com/{{cookiecutter.github_organization}}/{{cookiecutter.__gh_slug}}"
 
 [project.scripts]
 {{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}.cli:app"

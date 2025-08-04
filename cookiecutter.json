@@ -1,12 +1,27 @@
 {
-  "full_name": "Audrey M. Roy Greenfeld",
-  "email": "audreyfeldroy@example.com",
-  "github_username": "audreyfeldroy",
+  "full_name": "Gorilla Anonymous",
+  "email": "anonymous@gorilla-technologies.com",
+  "github_username": "anonymous",
+  "github_organization": "gorilla-ai",
   "pypi_package_name": "python-boilerplate",
   "project_name": "Python Boilerplate",
+  "project_category": {
+    "choices": [
+      "oneamazon",
+      "moe",
+      "cyber",
+      "devops", 
+      "team",
+      "scap",
+      "sq",
+      "vai",
+      "net"
+    ],
+    "default": "oneamazon"
+  },
   "project_slug": "{{ cookiecutter.pypi_package_name.replace('-', '_') }}",
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "first_version": "0.1.0",
-  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+  "__gh_slug": "{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}"
 }
