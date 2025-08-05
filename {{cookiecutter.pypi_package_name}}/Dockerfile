@@ -3,15 +3,16 @@ FROM bitnami/python:3.13 AS base
 
 WORKDIR /app
 
-COPY pyproject.toml README.md ./
+COPY pyproject.toml ./
 
 RUN pip install --upgrade pip setuptools wheel \
     && pip install .
 
 COPY src ./src
+COPY README.md ./
 
 
-# ---------- Test Stage ----------
+# ---------- Test & Lint Stage ----------
 FROM base AS test
 
 RUN pip install ".[test]"
@@ -23,7 +24,7 @@ python -m pytest --junitxml=./reports/pytest.xml --cov-report=term-missing:skip-
 
 RUN chmod +x docker-entrypoint.sh
 
-CMD ["/bin/sh", "-c", "./docker-entrypoint.sh"]
+CMD ["./docker-entrypoint.sh"]
 
 
 # ---------- Production Stage ----------

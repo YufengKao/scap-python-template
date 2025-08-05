@@ -42,7 +42,7 @@ homepage = "https://github.com/{{cookiecutter.github_organization}}/{{cookiecutt
 
 # Optional: Per-directory overrides for flexibility in boilerplates with tests or examples.
 [[tool.ty.overrides]]
-match = ["tests/**.py"]
+include = ["tests/**.py"]
 rules.TY016 = "ignore"  # Ignore invalid-assignment in tests, e.g., for dynamic fixtures.
 rules.TY029 = "ignore"  # Ignore invalid-return-type in tests.
 
